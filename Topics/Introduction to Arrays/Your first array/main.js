@@ -1,0 +1,1 @@
+myFirstArray = [10];

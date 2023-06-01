@@ -1,0 +1,12 @@
+type: code
+files:
+- name: main.js
+  visible: true
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/16147#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 01 Jun 2023 07:04:01 UTC"
+record: -1
+submission_language: javascript

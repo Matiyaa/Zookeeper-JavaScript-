@@ -1,0 +1,39 @@
+type: remote_edu
+custom_name: Rush into print.
+files:
+- name: main.js
+  visible: true
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from hstest.stage_test import StageTest
+    from hstest.test_case import TestCase
+    from hstest.check_result import CheckResult
+
+
+    class Zookeeper(StageTest):
+        def generate(self):
+            return [TestCase(attach=
+                             "I love animals!\n"
+                             "Let's check on the animals...\n"
+                             "The deer looks fine.\n"
+                             "The bat looks happy.\n"
+                             "The lion looks healthy.")]
+
+        def check(self, reply, attach):
+            if attach not in reply.strip():
+                return CheckResult.wrong('Your output should be like in the example!')
+            return CheckResult.correct()
+
+
+    if __name__ == '__main__':
+        Zookeeper('zookeeper.zookeeper').run_tests()
+  learner_created: false
+feedback_link: https://hyperskill.org/projects/225/stages/1128/implement#comment
+check_profile: hyperskill_node_javascript
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 01 Jun 2023 06:44:33 UTC"
+record: 1

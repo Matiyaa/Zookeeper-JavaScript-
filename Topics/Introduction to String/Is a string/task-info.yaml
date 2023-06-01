@@ -1,0 +1,23 @@
+type: code
+files:
+- name: main.js
+  visible: true
+  text: |-
+    function isString(data) {
+        if (typeof data === 'string') {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    console.log(isString("this is a string'));
+    console.log(isString([10, 20, 30]));
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/17750#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: "Thu, 01 Jun 2023 06:49:03 UTC"
+record: -1
+submission_language: javascript
